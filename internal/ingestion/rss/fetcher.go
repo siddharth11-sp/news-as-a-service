@@ -28,13 +28,50 @@ type FeedConfig struct {
 }
 
 var rssFeeds = []FeedConfig{
+	// General high-quality business/news
 	{
-		Name: "Reuters",
+		Name: "Reuters Business",
 		URL:  "https://feeds.reuters.com/reuters/businessNews",
 	},
 	{
 		Name: "CNBC",
 		URL:  "https://www.cnbc.com/id/10001147/device/rss/rss.html",
+	},
+
+	// Tech + Apple-heavy sources (IMPORTANT for entity matching)
+	{
+		Name: "The Verge",
+		URL:  "https://www.theverge.com/rss/index.xml",
+	},
+	{
+		Name: "TechCrunch",
+		URL:  "https://techcrunch.com/feed/",
+	},
+	{
+		Name: "Ars Technica",
+		URL:  "https://feeds.arstechnica.com/arstechnica/index",
+	},
+	{
+		Name: "Engadget",
+		URL:  "https://www.engadget.com/rss.xml",
+	},
+	{
+		Name: "MacRumors (Apple focused)",
+		URL:  "https://www.macrumors.com/macrumors.xml",
+	},
+	{
+		Name: "9to5Mac (Apple focused)",
+		URL:  "https://9to5mac.com/feed/",
+	},
+	{
+		Name: "AppleInsider (Apple focused)",
+		URL:  "https://www.appleinsider.com/rss/news/",
+	},
+
+	// Finance / market context (good for companies like Apple, Tesla, etc.)
+	{
+		Name: "Wall Street Journal - Markets",
+		URL:  "https://feeds.a.dj.com/rss/RSSMarketsMain.xml",
 	},
 }
 
