@@ -1,3 +1,46 @@
+# News as a Service
+
+## Stack
+
+Backend
+- Go
+- Gin
+- GORM
+- PostgreSQL
+
+Ingestion
+- RSS
+- Sentiment Analysis (Ollama + Qwen)
+
+Frontend
+- React
+- Vite
+
+Deployment
+- Render
+- Vercel
+
+## Architecture
+
+Entity
+→ RSS Fetch
+→ Normalize
+→ Deduplicate
+→ Sentiment
+→ Store
+→ API
+
+## Run Locally
+
+docker compose up
+
+go run ./cmd/server
+
+cd frontend
+npm install
+npm run dev
+
+
 Architecture Design : 
 
                     React UI
