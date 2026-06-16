@@ -38,7 +38,29 @@ var rssFeeds = []FeedConfig{
 		URL:  "https://www.cnbc.com/id/10001147/device/rss/rss.html",
 	},
 
-	// Tech + Apple-heavy sources (IMPORTANT for entity matching)
+	// Indian business & technology news
+	{
+		Name: "Times of India - Business",
+		URL:  "https://timesofindia.indiatimes.com/rssfeeds/1898055.cms",
+	},
+	{
+		Name: "Economic Times",
+		URL:  "https://economictimes.indiatimes.com/rssfeedsdefault.cms",
+	},
+	{
+		Name: "Business Standard",
+		URL:  "https://www.business-standard.com/rss/home_page_top_stories.rss",
+	},
+	{
+		Name: "Moneycontrol",
+		URL:  "https://www.moneycontrol.com/rss/business.xml",
+	},
+	{
+		Name: "Financial Express",
+		URL:  "https://www.financialexpress.com/feed/",
+	},
+
+	// Tech sources
 	{
 		Name: "The Verge",
 		URL:  "https://www.theverge.com/rss/index.xml",
@@ -55,20 +77,22 @@ var rssFeeds = []FeedConfig{
 		Name: "Engadget",
 		URL:  "https://www.engadget.com/rss.xml",
 	},
+
+	// Apple-focused
 	{
-		Name: "MacRumors (Apple focused)",
+		Name: "MacRumors",
 		URL:  "https://www.macrumors.com/macrumors.xml",
 	},
 	{
-		Name: "9to5Mac (Apple focused)",
+		Name: "9to5Mac",
 		URL:  "https://9to5mac.com/feed/",
 	},
 	{
-		Name: "AppleInsider (Apple focused)",
+		Name: "AppleInsider",
 		URL:  "https://www.appleinsider.com/rss/news/",
 	},
 
-	// Finance / market context (good for companies like Apple, Tesla, etc.)
+	// Market / finance
 	{
 		Name: "Wall Street Journal - Markets",
 		URL:  "https://feeds.a.dj.com/rss/RSSMarketsMain.xml",
