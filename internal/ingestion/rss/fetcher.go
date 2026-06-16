@@ -28,7 +28,7 @@ type FeedConfig struct {
 }
 
 var rssFeeds = []FeedConfig{
-	// General high-quality business/news
+	// Global Business
 	{
 		Name: "Reuters Business",
 		URL:  "https://feeds.reuters.com/reuters/businessNews",
@@ -38,36 +38,36 @@ var rssFeeds = []FeedConfig{
 		URL:  "https://www.cnbc.com/id/10001147/device/rss/rss.html",
 	},
 
-	// Indian business & technology news
-	{
-		Name: "Times of India - Business",
-		URL:  "https://timesofindia.indiatimes.com/rssfeeds/1898055.cms",
-	},
+	// Indian Business (HIGH PRIORITY)
 	{
 		Name: "Economic Times",
 		URL:  "https://economictimes.indiatimes.com/rssfeedsdefault.cms",
 	},
 	{
-		Name: "Business Standard",
-		URL:  "https://www.business-standard.com/rss/home_page_top_stories.rss",
+		Name: "Times of India Business",
+		URL:  "https://timesofindia.indiatimes.com/rssfeeds/1898055.cms",
 	},
 	{
 		Name: "Moneycontrol",
 		URL:  "https://www.moneycontrol.com/rss/business.xml",
 	},
 	{
+		Name: "Business Standard",
+		URL:  "https://www.business-standard.com/rss/home_page_top_stories.rss",
+	},
+	{
 		Name: "Financial Express",
 		URL:  "https://www.financialexpress.com/feed/",
 	},
 
-	// Tech sources
-	{
-		Name: "The Verge",
-		URL:  "https://www.theverge.com/rss/index.xml",
-	},
+	// Tech
 	{
 		Name: "TechCrunch",
 		URL:  "https://techcrunch.com/feed/",
+	},
+	{
+		Name: "The Verge",
+		URL:  "https://www.theverge.com/rss/index.xml",
 	},
 	{
 		Name: "Ars Technica",
@@ -78,7 +78,7 @@ var rssFeeds = []FeedConfig{
 		URL:  "https://www.engadget.com/rss.xml",
 	},
 
-	// Apple-focused
+	// Apple Specific
 	{
 		Name: "MacRumors",
 		URL:  "https://www.macrumors.com/macrumors.xml",
@@ -90,12 +90,6 @@ var rssFeeds = []FeedConfig{
 	{
 		Name: "AppleInsider",
 		URL:  "https://www.appleinsider.com/rss/news/",
-	},
-
-	// Market / finance
-	{
-		Name: "Wall Street Journal - Markets",
-		URL:  "https://feeds.a.dj.com/rss/RSSMarketsMain.xml",
 	},
 }
 
