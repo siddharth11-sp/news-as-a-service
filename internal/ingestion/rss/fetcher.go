@@ -146,8 +146,11 @@ func (r *RSSFetcher) filterArticles(
 
 	for _, item := range items {
 
+		log.Println("RSS ITEM:", item.Title)
 		content := strings.ToLower(
-			item.Title + " " + item.Description,
+			item.Title + " " +
+				item.Description + " " +
+				item.Content,
 		)
 
 		if !containsEntity(content, searchTerms) {
